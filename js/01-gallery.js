@@ -26,7 +26,7 @@ galleryRef.addEventListener('click', event => {
 
     if (event.target.nodeName !== 'IMG') {
         return
-    }
+    };
     
     let srcLink = event.target.getAttribute("data-source");
     console.log(srcLink);
