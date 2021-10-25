@@ -35,8 +35,8 @@ galleryRef.addEventListener('click', event => {
         `<img src="${srcLink}" width="800" height="600">`
     ).show();
     
-    window.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
+    window.addEventListener("keydown", (evt) => {
+        if (evt.key === "Escape") {
             instance.close();
         };
     });
