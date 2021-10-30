@@ -29,20 +29,19 @@ galleryRef.addEventListener('click', event => {
     };
     
     let srcLink = event.target.getAttribute("data-source");
-    console.log(srcLink);
 
     const instance = basicLightbox.create(
         `<img src="${srcLink}" width="800" height="600">`
-    ).show();
-    
-    window.addEventListener("keydown", function (evt) {
+    )
+    instance.show();   
+});
+
+ window.addEventListener("keydown", function (evt) {
             if (evt.key === "Escape") {
                 instance.close();
             };
-        });
-
-});
-
+            
+    });
 
 
  
